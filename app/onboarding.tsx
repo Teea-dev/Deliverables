@@ -57,7 +57,7 @@ export default function OnboardingScreen() {
 
   const handleFinish = () => {
     toggleHadOnboarded();
-    router.replace("/");
+    router.replace("/auth");
   };
 
   const handleNext = () => {

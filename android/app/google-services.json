@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "794933067925",
+    "project_id": "chowdeck-clone-84388",
+    "storage_bucket": "chowdeck-clone-84388.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794933067925:android:77462e0721795b5b0c9b9c",
+        "android_client_info": {
+          "package_name": "com.tokunbo.Deliverables"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZnMBVh68s1WqBNVi24NbCFqrooiA_eHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

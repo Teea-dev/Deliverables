@@ -42,8 +42,8 @@ export default function Layout() {
   const hasFinishedOnboarding = useUserStore(
     (state) => state.hasFinishedOnboarding
   );
-  if (!hasFinishedOnboarding) {
-    return <Redirect href="/onboarding" />;
+  if (hasFinishedOnboarding) {
+    return <Redirect href="/auth" />;
   }
   return (
     <Tabs>
