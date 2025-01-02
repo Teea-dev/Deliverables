@@ -25,7 +25,8 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="Deliverables"/>
-        <data android:scheme="com.tokunbo.Deliverables"/>
+        <data android:scheme="com.deliverables"/>
+        <data android:scheme="exp+deliverables"/>
       </intent-filter>
     </activity>
   </application>

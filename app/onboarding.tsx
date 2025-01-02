@@ -51,13 +51,13 @@ export default function OnboardingScreen() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const flatListRef = useRef<FlatList>(null);
   const toggleHadOnboarded = useUserStore(
-    (state) => state.setHasFinishedOnboarding
+    (state) => state.toggleHasOnboarded
   );
   const router = useRouter();
 
-  const handleFinish = () => {
+  const handlePress = () => {
     toggleHadOnboarded();
-    router.replace("/auth");
+    router.replace("/onboardNext");
   };
 
   const handleNext = () => {
@@ -67,7 +67,7 @@ export default function OnboardingScreen() {
         animated: true,
       });
     } else {
-      handleFinish();
+      handlePress();
     }
   };
 
@@ -104,7 +104,7 @@ export default function OnboardingScreen() {
   const renderPagination = () => (
     <View style={styles.paginationContainer}>
       <View style={styles.buttonContainer}>
-        <Pressable onPress={handleFinish}>
+        <Pressable onPress={handlePress}>
           <Text style={styles.skipButton}>Skip</Text>
         </Pressable>
         <Pressable style={styles.nextButton} onPress={handleNext}>

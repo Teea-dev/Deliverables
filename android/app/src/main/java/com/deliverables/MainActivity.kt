@@ -1,4 +1,4 @@
-package com.tokunbo.Deliverables
+package com.deliverables
 
 import android.os.Build
 import android.os.Bundle

@@ -21,13 +21,27 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.tokunbo.Deliverables"
+      "googleServicesFile": "./google-services.json",
+      "package": "com.deliverables"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "@react-native-firebase/app",
+      [
+        "@react-native-firebase/auth",
+        {
+          "androidApplicationId": "com.deliverables"
+        }
+      ],
+    [  "expo-build-properties"
+  ,{
+    "ios":{
+      "useFrameworks":"static"
+    }
+  }]
     ]
   }
 }
