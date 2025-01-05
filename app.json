@@ -14,7 +14,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.deliverables"
     },
     "android": {
       "adaptiveIcon": {
@@ -29,19 +30,26 @@
     },
     "plugins": [
       "expo-router",
-      "@react-native-firebase/app",
+      [
+        "@react-native-firebase/app",
+        {
+          "androidApplicationId": "com.deliverables"
+        }
+      ],
       [
         "@react-native-firebase/auth",
         {
           "androidApplicationId": "com.deliverables"
         }
       ],
-    [  "expo-build-properties"
-  ,{
-    "ios":{
-      "useFrameworks":"static"
-    }
-  }]
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
     ]
   }
 }
